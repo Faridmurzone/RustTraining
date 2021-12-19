@@ -87,10 +87,18 @@ fn main() {
 
     // Arrays:
     let names = ["Pascal", "Christoph", "Elvira"];
-    let numbers: [i8; 4] = [3, 2, 1, 4];
+    let numbers_arr: [i8; 4] = [3, 2, 1, 4];
     let kilobyte = [0u8; 1024];
-    for number in &numbers {
-        println!("{}", number);
+    for n in &numbers_arr {
+        println!("{}", n);
+    }
+
+    // Vectors:
+    let mut numbers_vec = Vec::new();
+    numbers_vec.push(3)
+    numbers_vec.push(9)
+    for n in &numbers_vec {
+        println("{}", n)
     }
 }
 
