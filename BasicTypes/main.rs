@@ -79,13 +79,19 @@ fn main() {
     // References: (https://blog.thoughtram.io/references-in-rust/)
     let name = String::from("Pascal"); // String
     let reference = &name; // &String
-
     let x = 10; // i32
     let r = &x; // &i32
-
     say_hello(reference);
     println!("{} is cool!", name);
     say_hello(name) // here it borrow the variable to say_hello
+
+    // Arrays:
+    let names = ["Pascal", "Christoph", "Elvira"];
+    let numbers: [i8; 4] = [3, 2, 1, 4];
+    let kilobyte = [0u8; 1024];
+    for number in &numbers {
+        println!("{}", number);
+    }
 }
 
 fn say_hello(name: &String) {
