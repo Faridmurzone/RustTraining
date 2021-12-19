@@ -44,4 +44,14 @@ fn main() {
     let f4 = 1e4;
     let f5 = 32f32;
     let f6 = 231.452e-29f64;
+
+    // Bool type:
+
+    let say_hello = true;
+    if say_hello {
+        println!("Hello!");
+    } else {
+        println!("Goodbye!");
+    }
+
 }
