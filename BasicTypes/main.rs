@@ -72,4 +72,22 @@ fn main() {
     let (head, tail) = text.split_at(5);
     println!("{}{}", head, tail);
 
+    // Unit type:
+    fn long() -> () {}
+    fn short() {}
+
+    // References: (https://blog.thoughtram.io/references-in-rust/)
+    let name = String::from("Pascal"); // String
+    let reference = &name; // &String
+
+    let x = 10; // i32
+    let r = &x; // &i32
+
+    say_hello(reference);
+    println!("{} is cool!", name);
+    say_hello(name) // here it borrow the variable to say_hello
+}
+
+fn say_hello(name: &String) {
+  println!("Hello {}!", name);
 }
