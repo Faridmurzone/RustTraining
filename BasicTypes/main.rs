@@ -54,4 +54,16 @@ fn main() {
         println!("Goodbye!");
     }
 
+    // Char types:
+    let char1 = '1';
+    let char2 = 'a';
+    let char3 = '🤯';
+    let char4 = '\\';
+    let char5 = '\'';
+    let char6 = '\n';
+    let char7 = '\r';
+    let char8 = '\t';
+    
+    println!("{}{}{}", char3, char6, char1);
+
 }
