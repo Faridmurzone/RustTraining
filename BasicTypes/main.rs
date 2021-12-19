@@ -31,6 +31,17 @@ fn main() {
     // isize: -2^31-1 or -2^63-1 to 2^31-1 or 2^63-1
 
     let number_type: u8 = 0;
+    let number_type_inference = 0 // default: i32
 
-    let number_type_inference = 0 // i32
+    // Floating-Point types
+    //
+    // f32: -3.4 * 10^38 to +3.4 * 38
+    // f64: -1.8 * 10^308 to +1.8 *10^308
+
+    let f = -1.2345;
+    let f2 = 3.;
+    let f3 = 0.34;
+    let f4 = 1e4;
+    let f5 = 32f32;
+    let f6 = 231.452e-29f64;
 }
