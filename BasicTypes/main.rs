@@ -63,7 +63,13 @@ fn main() {
     let char6 = '\n';
     let char7 = '\r';
     let char8 = '\t';
-    
     println!("{}{}{}", char3, char6, char1);
+
+    // Tuples:
+    let point = ("A", 32, 34);
+    println!("Point {}: {}, {}", point.0, point.1, point.2);
+    let text = "Hello world!";
+    let (head, tail) = text.split_at(5);
+    println!("{}{}", head, tail);
 
 }
